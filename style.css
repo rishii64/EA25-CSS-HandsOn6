@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.n1{
+    align-self: flex-end;
+    font-weight: 600;
+}
+.box{
+    width: 90px;
+    height: 90px;
+    border: none;
+}
+.b1{
+    background-color: #488874;
+    animation: skew1 10s infinite;
+}
+@keyframes skew1 {
+    25%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    75%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+.b2{
+    background-color: rgb(156, 160, 180);
+    animation: skew2 7s infinite;
+}
+@keyframes skew2 {
+    25%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    75%{
+        transform: skewY(20deg);
+    }
+    100%{
+        transform: skewY(-20deg);
+    }
+}
+.b3{
+    background-color: #488874;
+    animation: rotate 5s infinite;
+}
+@keyframes rotate {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.ba{
+    background-color: #488874;
+    border: 3px solid #376657;
+    animation: grow1 4s infinite;
+}
+@keyframes grow1 {
+    50%{
+        transform: scaleY(.6);
+    }
+}
+.bb{
+    background-color: rgb(156, 79, 88);
+    border: 3px solid rgb(107, 54, 61);
+    animation: grow2 4s infinite;
+}
+@keyframes grow2 {
+    50%{
+        transform: scaleX(.4);
+    }
+}
+.bc{
+    background-color: rgb(13, 172, 13);
+    border: 3px solid rgb(10, 124, 10);
+    animation: grow3 4s infinite;
+}
+@keyframes grow3 {
+    50%{
+        transform: rotate(90deg);
+    }
+}
+/*----------page 2----------- */
+.child2{
+    display: flex;
+    justify-content: center;
+}
+.square{
+    margin-bottom: 30px;
+    background-color: rgb(126, 199, 17);
+    transition-duration: 2s;
+}
+.s1:hover{
+    width: 300px;
+    transition-duration: 2s;
+}
+.s2:hover{
+    transition-property: width, height;
+    width: 300px;
+    height: 400px;
+    transition-duration: 5s;
+}
+.s3:hover{
+    width: 300px;
+    transition-duration: 3s;
+}
+.s4:hover{
+    width: 300px;
+    transition-duration: 3s;
+}
+.s5:hover{
+    width: 300px;
+    transition-duration: 3s;
+}
+.s6:hover{
+    width: 300px;
+    transition-duration: 3s;
+}
+.s7:hover{
+    width: 300px;
+    transition-duration: 3s;
+}
+/*----------page 3----------- */
